@@ -1,0 +1,32 @@
+<h1>Authors Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authors.each do |blog| %>
+      <tr>
+        <td><%= blog.author %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<hr>
+
+<p>
+  <%= link_to 'Homepage', root_path %>
+
+<br>
+  
+  <%= link_to 'My Blog', blogs_path %>
+
+<br>
+
+  <%= link_to 'Titles Page', titles_path %>
+</p>
